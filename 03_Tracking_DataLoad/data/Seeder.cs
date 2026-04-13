@@ -42,14 +42,14 @@ namespace _03_Tracking_DataLoad.data
                 Name = "Fortnite",
                 ReleaseDate = new DateTime(2017, 7, 21),
                 Publisher = publisher1,
-                Genres = new List<GenreEntity> { genre1 }
+                Genres = [genre1]
             };
             var game2 = new GameEntity
             {
                 Name = "The Witcher 3: Wild Hunt",
                 ReleaseDate = new DateTime(2015, 5, 19),
                 Publisher = publisher2,
-                Genres = new List<GenreEntity> { genre1, genre2 }
+                Genres = [genre1, genre2]
             };
             context.Publishers.AddRange(publisher1, publisher2);
             context.Genres.AddRange(genre1, genre2);

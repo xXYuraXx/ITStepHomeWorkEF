@@ -34,7 +34,7 @@ namespace _03_Tracking_DataLoad.Migrations
 
                     b.HasIndex("GenresId");
 
-                    b.ToTable("GameGenres");
+                    b.ToTable("GameGenres", (string)null);
                 });
 
             modelBuilder.Entity("_03_Tracking_DataLoad.Entities.GameEntity", b =>
@@ -66,7 +66,7 @@ namespace _03_Tracking_DataLoad.Migrations
 
                     b.HasIndex("PublisherId");
 
-                    b.ToTable("Games");
+                    b.ToTable("Games", (string)null);
                 });
 
             modelBuilder.Entity("_03_Tracking_DataLoad.Entities.GenreEntity", b =>
@@ -83,7 +83,7 @@ namespace _03_Tracking_DataLoad.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres");
+                    b.ToTable("Genres", (string)null);
                 });
 
             modelBuilder.Entity("_03_Tracking_DataLoad.Entities.PublisherEntity", b =>
@@ -111,7 +111,7 @@ namespace _03_Tracking_DataLoad.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Publishers");
+                    b.ToTable("Publishers", (string)null);
                 });
 
             modelBuilder.Entity("GameGenres", b =>
